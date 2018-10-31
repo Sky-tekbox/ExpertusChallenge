@@ -8,9 +8,12 @@ public class ClientService {
     @Autowired
     private ClientRepository clientRepository;
 
-    public void getForm(String name){
-        Client client=new Client();
-        //System.out.println("str="+name);
+    public void saveClient(String firstName, String lastName,String email, String telephone){
+        Client client = new Client();
+        client.setFirstName(firstName);
+        client.setLastName(lastName);
+        client.setEmail(email);
+        client.setTelephone(telephone);
         clientRepository.save(client);
     }
 }
