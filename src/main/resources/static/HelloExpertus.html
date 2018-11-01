@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SubmitPage</title>
+    <link rel="stylesheet" type="text/css" href="HelloExpertus.css" />
+</head>
+
+<body>
+
+<div id="topBackground">
+    <div id="hello">Hello! Welcome to Expertus</div><br>
+    <div id="client">Fill the registration information please!</div> <br>
+
+    <form id="form" action="http://localhost:8080/challenge/post" method="post">
+         <p id="formPara3">* required information</p>
+        <p class="formInfo">FirstName *</p>
+        <input class="inputInfo" type="text" name="firstName" value="Your first name"><br>
+        <p class="formInfo">LastName *</p>
+        <input class="inputInfo" type="text" name="lastName" value="Your last name"><br>
+        <p class="formInfo">Email *</p>
+        <input class="inputInfo" type="text" name="email" value="Your email address">
+        <br>
+        <p class="formInfo">Telephone *</p>
+        <input class="inputInfo" type="text" name="telephone" value="Your telephone"><br>
+        <br>
+        <button id="submit" name="submit" type="submit">SUBMIT</button>
+    </form>
+</div>
+
+</body>
+</html>
