@@ -9,7 +9,7 @@ public class MainController {
     @Autowired
     private ClientService clientService;
 
-    @GetMapping(path="/add")
+    @RequestMapping(path="/post",method= RequestMethod.POST)
     public @ResponseBody
     String addNewClient (@RequestParam String firstName, @RequestParam String lastName,@RequestParam String email, @RequestParam String telephone) {
         clientService.saveClient(firstName,lastName,email,telephone);
